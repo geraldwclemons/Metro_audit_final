@@ -1,0 +1,9 @@
+clones-with-immutable-args/=lib/clones-with-immutable-args/src/
+ds-test/=lib/forge-std/lib/ds-test/src/
+forge-std/=lib/forge-std/src/
+joe-v2-periphery/=lib/joe-v2-periphery/src/
+joe-v2/=lib/joe-v2/src/
+openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/
+openzeppelin-contracts/=lib/openzeppelin-contracts/
+openzeppelin-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
+openzeppelin/=lib/openzeppelin-contracts/contracts/

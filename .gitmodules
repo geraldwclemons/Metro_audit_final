@@ -1,0 +1,28 @@
+[submodule "lib/forge-std"]
+	path = lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "lib\\forge-std"]
+	branch = v1.5.1
+[submodule "lib/openzeppelin-contracts"]
+	path = lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "lib\\openzeppelin-contracts"]
+	branch = v4.8.2
+[submodule "lib/joe-v2"]
+	path = lib/joe-v2
+	url = https://github.com/traderjoe-xyz/joe-v2
+[submodule "lib\\joe-v2"]
+	branch = v2.1.1
+[submodule "lib/joe-v2-periphery"]
+	path = lib/joe-v2-periphery
+	url = https://github.com/lib/joe-v2-periphery
+[submodule "lib/clones-with-immutable-args"]
+	path = lib/clones-with-immutable-args
+	url = https://github.com/wighawag/clones-with-immutable-args
+[submodule "lib\\clones-with-immutable-args"]
+	branch = v1.0.0
+[submodule "lib/openzeppelin-contracts-upgradeable"]
+	path = lib/openzeppelin-contracts-upgradeable
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable
+[submodule "lib\\openzeppelin-contracts-upgradeable"]
+	branch = v4.8.2

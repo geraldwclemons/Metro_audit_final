@@ -1,0 +1,54 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+optimizer = true
+# optimizer_runs = 800
+optimizer_runs = 800
+evm_version = 'cancun'
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
+
+fs_permissions = [{ access = "read", path = "./"}]
+
+[fuzz]
+runs = 1024
+
+[rpc_endpoints]
+avalanche = "https://api.avax.network/ext/bc/C/rpc"
+fuji = "https://api.avax-test.network/ext/bc/C/rpc"
+fantom_testnet = "${RPC_FANTOM_TESTNET_URL}"
+eos_evm = "${RPC_EOS_EVM_URL}"
+fantom = "${RPC_FANTOM_URL}"
+optimism = "${RPC_OPTIMISM_URL}"
+zkevm_testnet = "${RPC_ZKEVM_TESTNET_URL}"
+zkevm = "${RPC_ZKEVM_URL}"
+arbitrum ="${RPC_ARBITRUM_URL}"
+base="${RPC_BASE_URL}"
+shimmer_testnet= "${RPC_SHIMMER_TESTNET_URL}"
+shimmer = "${RPC_SHIMMER_URL}"
+santoshivm_testnet="${RPC_SATOSHIVM_TESTNET_URL}"
+iota = "${RPC_IOTA_URL}"
+iota_testnet = "${RPC_IOTA_TESTNET_URL}"
+sonic_testnet = "${RPC_SONIC_TESTNET_URL}"
+sonic_blaze = "${RPC_SONIC_BLAZE_URL}"
+sonic = "${RPC_SONIC_URL}"
+
+[etherscan]
+arbitrum = { key = "${ARBISCAN_API_KEY}", chain = 42161 }
+avalanche = { key = "${SNOWTRACE_API_KEY}", chain = 43114 }
+arbitrum_goerli = { key = "${ARBISCAN_API_KEY}", chain = 421613 }
+fuji = { key = "${SNOWTRACE_API_KEY}", chain = 43113 }
+fantom_testnet = { key="${FTMSCAN_API_KEY}", chain = 4002 }
+fantom = { key = "${FTMSCAN_API_KEY}", chain = 250 }
+optimism = { key = "${OPTIMISTIC_SCAN_API_KEY}", chain = 10 }
+optimism_goerli = { key = "${OPTIMISTIC_SCAN_API_KEY}", chain = 420 }
+zkevm_testnet = { key = "${ZKEVM_POLYSCAN_API_KEY}", chain = 1442, url = "https://api-testnet-zkevm.polygonscan.com/api" }
+zkevm = { key = "${ZKEVM_POLYSCAN_API_KEY}", chain = 1101, url = "https://api-zkevm.polygonscan.com/api" }
+base = { key = "${BASESCAN_API_KEY}", chain = 8453, url = "https://api.basescan.org/api" }
+shimmer_testnet = { key = "API_KEY", chain = 1073, url = "https://explorer.evm.testnet.shimmer.network/api" }
+shimmer = { key = "API_KEY", chain = 148, url = "https://explorer.evm.shimmer.network/api" }
+santoshivm_testnet =  { key = "API_KEY", chain = 3110, url = "https://explorer.evm.shimmer.network/api" }
+iota = { key = "API_KEY", chain = 8822, url = "https://iota-evm.blockscout.com/api" }
+iota_testnet = { key = "API_KEY", chain = 1075, url = "https://explorer.evm.testnet.iotaledger.net/api" }
+sonic_testnet = { key = "API_KEY", chain = 64165, url = "https://testnet.soniclabs.com/api" }
+sonic = { key = "${SONICSCAN_API_KEY}", chain = 146, url = "https://api.sonicscan.org/api" }
